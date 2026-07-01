@@ -1,0 +1,54 @@
+{
+  "name": "ultracost",
+  "version": "0.4.5",
+  "description": "Per-stage model routing for Claude Code dynamic workflows (ultracode). Quality-first policy, CLAUDE.md rule injection, and a workflow-script guard that catches subagent stages that would silently inherit Opus.",
+  "type": "module",
+  "bin": {
+    "ultracost": "./bin/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.js\"",
+    "coverage": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=lcov.info \"tests/**/*.test.js\"",
+    "check": "node --check bin/cli.js && node --check src/index.js",
+    "ultracost": "node bin/cli.js"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "ultracode",
+    "dynamic-workflows",
+    "subagents",
+    "model-routing",
+    "token-optimization",
+    "cost-optimization",
+    "opus",
+    "sonnet"
+  ],
+  "author": "Daniel Kremen",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/danielkremen818",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielkremen818/ultracost.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielkremen818/ultracost/issues"
+  },
+  "homepage": "https://github.com/danielkremen818/ultracost#readme",
+  "files": [
+    "bin/",
+    "src/",
+    "templates/",
+    "docs/",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=24"
+  }
+}

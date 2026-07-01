@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1004" height="486" viewBox="0 0 1004 486" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" role="img" aria-label="ultracost terminal: ultracost check — the Workflow Guard">
+<defs><linearGradient id="frame" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="55%" stop-color="#e879f9"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient><radialGradient id="glow" cx="22%" cy="0%" r="90%"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.16"/><stop offset="60%" stop-color="#a78bfa" stop-opacity="0"/></radialGradient><clipPath id="screen"><rect x="1.5" y="1.5" width="1001" height="483" rx="11"/></clipPath></defs>
+<rect x="1" y="1" width="1002" height="484" rx="11.5" fill="#0d1017" stroke="url(#frame)" stroke-width="1.5"/>
+<g clip-path="url(#screen)">
+<rect x="0" y="0" width="1004" height="486" fill="url(#glow)"/>
+<rect x="1.5" y="1.5" width="1001" height="36" rx="11" fill="#161a26"/>
+<rect x="1.5" y="28" width="1001" height="10" fill="#161a26"/>
+<line x1="0" y1="37.5" x2="1004" y2="37.5" stroke="#000" stroke-opacity="0.35"/>
+<circle cx="24" cy="19" r="5.5" fill="#fb7185"/>
+<circle cx="44" cy="19" r="5.5" fill="#fbbf24"/>
+<circle cx="64" cy="19" r="5.5" fill="#34d399"/>
+<text x="502" y="23" text-anchor="middle" font-size="11" fill="#94a3b8" letter-spacing="0.04em">ultracost check — the Workflow Guard</text>
+<text font-size="13" xml:space="preserve">
+<tspan x="22" y="65"><tspan fill="#34d399">$ </tspan><tspan fill="#22d3ee">ultracost check examples/workflow.bad.js</tspan></tspan>
+<tspan x="22" y="84"> </tspan>
+<tspan x="22" y="103"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" font-weight="700">/private/tmp/uc-sig/examples/workflow.bad.js  </tspan><tspan fill="#fb7185" font-weight="700">4 errors</tspan><tspan fill="#c9d2e3" font-weight="700" opacity="0.58"> · </tspan><tspan fill="#fbbf24">4 warnings</tspan></tspan>
+<tspan x="22" y="122"><tspan fill="#c9d2e3">    </tspan><tspan fill="#fb7185">✗</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">6:19</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#fb7185">UC001</tspan><tspan fill="#c9d2e3">  stage has no options object — add { model: ... } so it does not inherit the session model</tspan></tspan>
+<tspan x="22" y="141"><tspan fill="#c9d2e3">      </tspan><tspan fill="#c9d2e3" opacity="0.58">const a = await agent(&#39;do the thing&#39;);                                  // UC001 no options object</tspan></tspan>
+<tspan x="22" y="160"><tspan fill="#c9d2e3">    </tspan><tspan fill="#fb7185">✗</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">7:19</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#fb7185">UC002</tspan><tspan fill="#c9d2e3">  stage options object has no model — will inherit the session model</tspan></tspan>
+<tspan x="22" y="179"><tspan fill="#c9d2e3">      </tspan><tspan fill="#c9d2e3" opacity="0.58">const b = await agent(&#39;x&#39;, { effort: &#39;high&#39; });                         // UC002 object without model</tspan></tspan>
+<tspan x="22" y="198"><tspan fill="#c9d2e3">    </tspan><tspan fill="#fb7185">✗</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">8:19</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#fb7185">UC003</tspan><tspan fill="#c9d2e3">  stage pins banned model &quot;haiku&quot; (policy.neverUse)</tspan></tspan>
+<tspan x="22" y="217"><tspan fill="#c9d2e3">      </tspan><tspan fill="#c9d2e3" opacity="0.58">const c = await agent(&#39;x&#39;, { model: &#39;haiku&#39; });                         // UC003 banned model</tspan></tspan>
+<tspan x="22" y="236"><tspan fill="#c9d2e3">    </tspan><tspan fill="#fb7185">✗</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">9:19</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#fb7185">UC004</tspan><tspan fill="#c9d2e3">  stage uses model: &#39;inherit&#39; (allowInherit is false)</tspan></tspan>
+<tspan x="22" y="255"><tspan fill="#c9d2e3">      </tspan><tspan fill="#c9d2e3" opacity="0.58">const d = await agent(&#39;x&#39;, { model: &#39;inherit&#39; });                       // UC004 inherit</tspan></tspan>
+<tspan x="22" y="274"><tspan fill="#c9d2e3">    </tspan><tspan fill="#fbbf24">!</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">10:19</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#fbbf24">UC005</tspan><tspan fill="#c9d2e3">  stage model is a dynamic expression — cannot statically verify a valid model is pinned</tspan></tspan>
+<tspan x="22" y="293"><tspan fill="#c9d2e3">      </tspan><tspan fill="#c9d2e3" opacity="0.58">const e = await agent(&#39;x&#39;, { model: pickModel() });                     // UC005 dynamic model</tspan></tspan>
+<tspan x="22" y="312"><tspan fill="#c9d2e3">    </tspan><tspan fill="#fbbf24">!</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">11:19</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#fbbf24">UC006</tspan><tspan fill="#c9d2e3">  stage reads like opus work (refactor) but pins &quot;sonnet&quot; — consider model: &#39;opus&#39;</tspan></tspan>
+<tspan x="22" y="331"><tspan fill="#c9d2e3">      </tspan><tspan fill="#c9d2e3" opacity="0.58">const f = await agent(&#39;Refactor the auth module and fix the bug&#39;, { model: &#39;sonnet&#39; }); // UC006 wrong-tier</tspan></tspan>
+<tspan x="22" y="350"><tspan fill="#c9d2e3">    </tspan><tspan fill="#fbbf24">!</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">12:19</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#fbbf24">UC007</tspan><tspan fill="#c9d2e3">  effort &#39;xhigh&#39; exceeds the &#39;high&#39; cap for sonnet (policy.effort.maxByModel)</tspan></tspan>
+<tspan x="22" y="369"><tspan fill="#c9d2e3">      </tspan><tspan fill="#c9d2e3" opacity="0.58">const g = await agent(&#39;List the files&#39;, { model: &#39;sonnet&#39;, effort: &#39;xhigh&#39; });          // UC007 effort over cap</tspan></tspan>
+<tspan x="22" y="388"><tspan fill="#c9d2e3">    </tspan><tspan fill="#fbbf24">!</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">13:19</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#fbbf24">UC008</tspan><tspan fill="#c9d2e3">  stage looks like the &quot;orchestrator&quot; role (policy.alwaysOpus) but pins &quot;sonnet&quot; — these stay on opus</tspan></tspan>
+<tspan x="22" y="407"><tspan fill="#c9d2e3">      </tspan><tspan fill="#c9d2e3" opacity="0.58">const h = await agent(&#39;Act as the orchestrator and route subtasks&#39;, { model: &#39;sonnet&#39; }); // UC008 alwaysOpus role</tspan></tspan>
+<tspan x="22" y="426"> </tspan>
+<tspan x="22" y="445"><tspan fill="#c9d2e3">  </tspan><tspan fill="#fb7185">4 error(s)</tspan><tspan fill="#c9d2e3">  ·  </tspan><tspan fill="#fbbf24">4 warning(s)</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">in 1 file(s)</tspan></tspan>
+<tspan x="22" y="464"><tspan fill="#c9d2e3" opacity="0.58">  fix the unambiguous ones: ultracost check examples/workflow.bad.js --fix</tspan></tspan>
+</text>
+</g>
+</svg>

@@ -1,0 +1,35 @@
+{
+  "name": "ultracost",
+  "owner": {
+    "name": "Daniel Kremen"
+  },
+  "description": "Quality-first per-stage model routing for Claude Code dynamic workflows.",
+  "plugins": [
+    {
+      "name": "ultracost",
+      "source": "./",
+      "version": "0.4.5",
+      "license": "MIT",
+      "description": "Per-stage model routing for ultracode/dynamic workflows: a SessionStart policy-injection hook, a PreToolUse cost gate, a routing skill, and slash commands (/ultracost:check · estimate · explain · simulate · diff · audit · usage · reconcile · calibrate · ledger · status).",
+      "category": "developer-tools",
+      "tags": [
+        "model-routing",
+        "ultracode",
+        "dynamic-workflows",
+        "subagents",
+        "cost-optimization",
+        "finops",
+        "automation",
+        "monitoring",
+        "observability",
+        "productivity",
+        "ai",
+        "llm",
+        "code-quality",
+        "devops",
+        "cli",
+        "guard"
+      ]
+    }
+  ]
+}

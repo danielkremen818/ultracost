@@ -1,0 +1,10 @@
+version: 2
+updates:
+  # Keep the GitHub Actions used by CI / release workflows up to date (and their
+  # SHA pins bumped). There is intentionally NO "npm" ecosystem entry: ultracost
+  # has zero runtime and zero dev dependencies, so there is nothing for Dependabot
+  # to update in package.json.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"

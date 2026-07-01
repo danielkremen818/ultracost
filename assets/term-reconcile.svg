@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="732" height="505" viewBox="0 0 732 505" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" role="img" aria-label="ultracost terminal: ultracost reconcile — estimate vs actual">
+<defs><linearGradient id="frame" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="55%" stop-color="#e879f9"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient><radialGradient id="glow" cx="22%" cy="0%" r="90%"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.16"/><stop offset="60%" stop-color="#a78bfa" stop-opacity="0"/></radialGradient><clipPath id="screen"><rect x="1.5" y="1.5" width="729" height="502" rx="11"/></clipPath></defs>
+<rect x="1" y="1" width="730" height="503" rx="11.5" fill="#0d1017" stroke="url(#frame)" stroke-width="1.5"/>
+<g clip-path="url(#screen)">
+<rect x="0" y="0" width="732" height="505" fill="url(#glow)"/>
+<rect x="1.5" y="1.5" width="729" height="36" rx="11" fill="#161a26"/>
+<rect x="1.5" y="28" width="729" height="10" fill="#161a26"/>
+<line x1="0" y1="37.5" x2="732" y2="37.5" stroke="#000" stroke-opacity="0.35"/>
+<circle cx="24" cy="19" r="5.5" fill="#fb7185"/>
+<circle cx="44" cy="19" r="5.5" fill="#fbbf24"/>
+<circle cx="64" cy="19" r="5.5" fill="#34d399"/>
+<text x="366" y="23" text-anchor="middle" font-size="11" fill="#94a3b8" letter-spacing="0.04em">ultracost reconcile — estimate vs actual</text>
+<text font-size="13" xml:space="preserve">
+<tspan x="22" y="65"><tspan fill="#34d399">$ </tspan><tspan fill="#22d3ee">ultracost reconcile --last</tspan></tspan>
+<tspan x="22" y="84"> </tspan>
+<tspan x="22" y="103"><tspan fill="#a78bfa"> </tspan><tspan fill="#a08ff9"> </tspan><tspan fill="#9a92f9">u</tspan><tspan fill="#9396f8">l</tspan><tspan fill="#8c99f8">t</tspan><tspan fill="#869df7">r</tspan><tspan fill="#7fa1f6">a</tspan><tspan fill="#78a4f6">c</tspan><tspan fill="#72a8f5">o</tspan><tspan fill="#6babf5">s</tspan><tspan fill="#65aff4">t</tspan><tspan fill="#5eb3f3"> </tspan><tspan fill="#57b6f3">r</tspan><tspan fill="#51baf2">e</tspan><tspan fill="#4abdf2">c</tspan><tspan fill="#43c1f1">o</tspan><tspan fill="#3dc5f0">n</tspan><tspan fill="#36c8f0">c</tspan><tspan fill="#2fccef">i</tspan><tspan fill="#29cfef">l</tspan><tspan fill="#22d3ee">e</tspan></tspan>
+<tspan x="22" y="122"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">wf_deep_audit_03 · 2026-06-15 · 10 stages</tspan></tspan>
+<tspan x="22" y="141"> </tspan>
+<tspan x="22" y="160"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" font-weight="700">  </tspan><tspan fill="#c9d2e3" font-weight="700" opacity="0.58">#</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" font-weight="700">tier  </tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" font-weight="700">tokens</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" font-weight="700"> actual</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" font-weight="700">all-opus</tspan></tspan>
+<tspan x="22" y="179"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#1</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#a78bfa">opus</tspan><tspan fill="#c9d2e3">      11.7k   $0.0420    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0420</tspan></tspan>
+<tspan x="22" y="198"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#2</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#22d3ee">sonnet</tspan><tspan fill="#c9d2e3">     6.7k   $0.0138    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0230</tspan></tspan>
+<tspan x="22" y="217"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#3</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#22d3ee">sonnet</tspan><tspan fill="#c9d2e3">     9.2k   $0.0186    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0310</tspan></tspan>
+<tspan x="22" y="236"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#4</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#22d3ee">sonnet</tspan><tspan fill="#c9d2e3">     8.9k   $0.0178    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0296</tspan></tspan>
+<tspan x="22" y="255"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#5</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#22d3ee">sonnet</tspan><tspan fill="#c9d2e3">     8.6k   $0.0173    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0288</tspan></tspan>
+<tspan x="22" y="274"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#6</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#22d3ee">sonnet</tspan><tspan fill="#c9d2e3">     8.7k   $0.0179    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0299</tspan></tspan>
+<tspan x="22" y="293"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#7</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#22d3ee">sonnet</tspan><tspan fill="#c9d2e3">     7.3k   $0.0150    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0250</tspan></tspan>
+<tspan x="22" y="312"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#8</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#22d3ee">sonnet</tspan><tspan fill="#c9d2e3">     7.7k   $0.0157    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0261</tspan></tspan>
+<tspan x="22" y="331"><tspan fill="#c9d2e3">   </tspan><tspan fill="#c9d2e3" opacity="0.58">#9</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#22d3ee">sonnet</tspan><tspan fill="#c9d2e3">     9.6k   $0.0200    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0333</tspan></tspan>
+<tspan x="22" y="350"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">#10</tspan><tspan fill="#c9d2e3">   </tspan><tspan fill="#a78bfa">opus</tspan><tspan fill="#c9d2e3">      18.2k   $0.0720    </tspan><tspan fill="#c9d2e3" opacity="0.58">$0.0720</tspan></tspan>
+<tspan x="22" y="369"> </tspan>
+<tspan x="22" y="388"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">actual</tspan><tspan fill="#c9d2e3">                     $0.2501</tspan></tspan>
+<tspan x="22" y="407"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">all-opus baseline</tspan><tspan fill="#c9d2e3">          $0.3408</tspan></tspan>
+<tspan x="22" y="426"><tspan fill="#c9d2e3">  </tspan><tspan fill="#34d399">saved</tspan><tspan fill="#c9d2e3">               </tspan><tspan fill="#34d399">$0.0907  (27%)</tspan></tspan>
+<tspan x="22" y="445"><tspan fill="#c9d2e3">  </tspan><tspan fill="#34d399">███████</tspan><tspan fill="#c9d2e3" opacity="0.58">░░░░░░░░░░░░░░░░░░░░░░░</tspan><tspan fill="#c9d2e3">  27% saved</tspan></tspan>
+<tspan x="22" y="464"> </tspan>
+<tspan x="22" y="483"><tspan fill="#c9d2e3" opacity="0.58">  reconciled from real per-stage token usage (subagents/workflows/wf_*/agent-*.jsonl).</tspan></tspan>
+</text>
+</g>
+</svg>

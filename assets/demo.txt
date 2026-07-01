@@ -1,0 +1,40 @@
+$ ultracost estimate workflow.js
+
+  ultracost estimate
+  examples/workflow.good.js
+
+  agents      4 fixed + 1 fan-out x ~5 = ~9
+  model mix   3x opus  6x sonnet
+
+  baseline   all opus    $0.9000
+  tiered     ultracost   $0.5304
+  savings    41%         $0.3696
+
+  ████████████▍░░░░░░░░░░░░░░░░░  41% saved
+
+  estimate; pricing as of 2026-06-13; fan-out assumes ~5 items/group; unpinned stages inherit opus.
+
+
+$ ultracost check workflow.bad.js
+
+  examples/workflow.bad.js  4 errors · 4 warnings
+    ✗ 6:19  UC001  stage has no options object — add { model: ... } so it does not inherit the session model
+      const a = await agent('do the thing');                                  // UC001 no options object
+    ✗ 7:19  UC002  stage options object has no model — will inherit the session model
+      const b = await agent('x', { effort: 'high' });                         // UC002 object without model
+    ✗ 8:19  UC003  stage pins banned model "haiku" (policy.neverUse)
+      const c = await agent('x', { model: 'haiku' });                         // UC003 banned model
+    ✗ 9:19  UC004  stage uses model: 'inherit' (allowInherit is false)
+      const d = await agent('x', { model: 'inherit' });                       // UC004 inherit
+    ! 10:19  UC005  stage model is a dynamic expression — cannot statically verify a valid model is pinned
+      const e = await agent('x', { model: pickModel() });                     // UC005 dynamic model
+    ! 11:19  UC006  stage reads like opus work (refactor) but pins "sonnet" — consider model: 'opus'
+      const f = await agent('Refactor the auth module and fix the bug', { model: 'sonnet' }); // UC006 wrong-tier
+    ! 12:19  UC007  effort 'xhigh' exceeds the 'high' cap for sonnet (policy.effort.maxByModel)
+      const g = await agent('List the files', { model: 'sonnet', effort: 'xhigh' });          // UC007 effort over cap
+    ! 13:19  UC008  stage looks like the "orchestrator" role (policy.alwaysOpus) but pins "sonnet" — these stay on opus
+      const h = await agent('Act as the orchestrator and route subtasks', { model: 'sonnet' }); // UC008 alwaysOpus role
+
+  4 error(s)  ·  4 warning(s)  in 1 file(s)
+  fix the unambiguous ones: ultracost check examples/workflow.bad.js --fix
+

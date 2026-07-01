@@ -1,0 +1,22 @@
+node_modules/
+*.log
+.DS_Store
+dist/
+coverage/
+lcov.info
+.env
+.env.*
+*.tgz
+
+# graphify export cache — generated locally, never committed
+graphify-out/
+
+# local launch/marketing drafts — not part of the package
+.launch/
+
+# Python bytecode (scripts/svgkit.py is imported by the SVG generators)
+__pycache__/
+*.pyc
+
+# local editor config — never committed
+.vscode/

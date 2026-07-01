@@ -1,0 +1,31 @@
+{
+  "name": "ultracost",
+  "version": "0.4.5",
+  "description": "Quality-first per-stage model routing for Claude Code dynamic workflows (ultracode): a SessionStart hook that injects the routing policy, a PreToolUse cost gate, a routing skill, and slash commands for the whole workflow — /ultracost:check (guard agent() stages), estimate, explain, simulate, diff, audit, usage, reconcile, calibrate, ledger, status.",
+  "author": {
+    "name": "Daniel Kremen"
+  },
+  "homepage": "https://github.com/danielkremen818/ultracost#readme",
+  "repository": "https://github.com/danielkremen818/ultracost",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-code-plugin",
+    "ultracode",
+    "dynamic-workflows",
+    "subagents",
+    "model-routing",
+    "cost-optimization",
+    "finops",
+    "automation",
+    "monitoring",
+    "observability",
+    "developer-tools",
+    "productivity",
+    "ai",
+    "llm",
+    "code-quality",
+    "devops",
+    "cli"
+  ]
+}

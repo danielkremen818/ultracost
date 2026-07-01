@@ -1,0 +1,31 @@
+ultracost
+Copyright (c) 2026 Daniel Kremen
+
+This project is an original, clean-room implementation. It was informed by
+prior art in the Claude Code model-routing ecosystem. None of the projects
+below contributed code to ultracost; they are credited as inspiration for the
+problem space (routing Claude Code subagents to cost-appropriate models).
+
+Prior art / inspiration:
+  - JacobiusMakes/claude-budget   — static model-routed agents + CLAUDE.md rules + post-compact reminder
+  - 0xrdan/claude-router          — automatic per-prompt routing via hooks
+  - gacabartosz/claude-smart-router — research-inspired complexity scoring
+  - R4CK/claude-model-changer     — quota-aware complexity routing
+  - coyvalyss1/model-matchmaker   — keyword->tier routing rubric
+  - ryoppippi/ccusage (MIT)       — the documented Claude Code transcript parse + dedup contract
+  - Anthropic session-report skill (Apache-2.0) — local transcript token-attribution algorithm
+  - krulewis/tokencast (MIT)      — pre-flight estimate + calibration-from-actuals approach
+  - Jwrede/tokentoll (MIT)        — "Infracost for LLM" cost-diff-on-PR UX
+
+The wrong-tier keyword rubric (src/classify.js) was informed by the public router
+rubrics above; the transcript parse/dedup and calibration were reimplemented
+clean-room from the documented behavior of ccusage / the session-report skill —
+no code was copied. ultracost remains MIT and zero-dependency.
+
+ultracost's distinct contribution is per-stage routing for dynamic workflows
+(ultracode): a quality-first policy; a static-analysis guard that inspects the
+workflow scripts Claude Code authors and flags stages that would silently inherit
+the session model, pin a model that mismatches the task, or exceed the effort cap;
+and a closed loop that reconciles its own estimates against real per-stage token
+usage. No other tool statically detects an unpinned inline agent()/pipeline() stage
+or a pin that mismatches the work the prompt describes.

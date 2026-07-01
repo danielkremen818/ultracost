@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="532" height="391" viewBox="0 0 532 391" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" role="img" aria-label="ultracost terminal: ultracost audit — pin coverage across your history">
+<defs><linearGradient id="frame" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="55%" stop-color="#e879f9"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient><radialGradient id="glow" cx="22%" cy="0%" r="90%"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.16"/><stop offset="60%" stop-color="#a78bfa" stop-opacity="0"/></radialGradient><clipPath id="screen"><rect x="1.5" y="1.5" width="529" height="388" rx="11"/></clipPath></defs>
+<rect x="1" y="1" width="530" height="389" rx="11.5" fill="#0d1017" stroke="url(#frame)" stroke-width="1.5"/>
+<g clip-path="url(#screen)">
+<rect x="0" y="0" width="532" height="391" fill="url(#glow)"/>
+<rect x="1.5" y="1.5" width="529" height="36" rx="11" fill="#161a26"/>
+<rect x="1.5" y="28" width="529" height="10" fill="#161a26"/>
+<line x1="0" y1="37.5" x2="532" y2="37.5" stroke="#000" stroke-opacity="0.35"/>
+<circle cx="24" cy="19" r="5.5" fill="#fb7185"/>
+<circle cx="44" cy="19" r="5.5" fill="#fbbf24"/>
+<circle cx="64" cy="19" r="5.5" fill="#34d399"/>
+<text x="266" y="23" text-anchor="middle" font-size="11" fill="#94a3b8" letter-spacing="0.04em">ultracost audit — pin coverage across your history</text>
+<text font-size="13" xml:space="preserve">
+<tspan x="22" y="65"><tspan fill="#34d399">$ </tspan><tspan fill="#22d3ee">ultracost audit ~/.claude/projects</tspan></tspan>
+<tspan x="22" y="84"> </tspan>
+<tspan x="22" y="103"><tspan fill="#a78bfa"> </tspan><tspan fill="#9f90f9"> </tspan><tspan fill="#9694f9">u</tspan><tspan fill="#8e99f8">l</tspan><tspan fill="#869df7">t</tspan><tspan fill="#7da2f6">r</tspan><tspan fill="#75a6f6">a</tspan><tspan fill="#6dabf5">c</tspan><tspan fill="#65aff4">o</tspan><tspan fill="#5cb4f3">s</tspan><tspan fill="#54b8f3">t</tspan><tspan fill="#4cbdf2"> </tspan><tspan fill="#43c1f1">a</tspan><tspan fill="#3bc6f0">u</tspan><tspan fill="#33caf0">d</tspan><tspan fill="#2acfef">i</tspan><tspan fill="#22d3ee">t</tspan></tspan>
+<tspan x="22" y="122"> </tspan>
+<tspan x="22" y="141"><tspan fill="#c9d2e3" opacity="0.58">  scanned 3 script(s) under ~/.claude/projects</tspan></tspan>
+<tspan x="22" y="160"> </tspan>
+<tspan x="22" y="179"><tspan fill="#c9d2e3">  agent() stages  21</tspan></tspan>
+<tspan x="22" y="198"><tspan fill="#c9d2e3">  pinned           </tspan><tspan fill="#34d399">1</tspan></tspan>
+<tspan x="22" y="217"><tspan fill="#c9d2e3">  unpinned        </tspan><tspan fill="#fb7185">20</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">UC001/UC002 — inherit the session model</tspan></tspan>
+<tspan x="22" y="236"><tspan fill="#c9d2e3">  banned           0  </tspan><tspan fill="#c9d2e3" opacity="0.58">UC003</tspan></tspan>
+<tspan x="22" y="255"><tspan fill="#c9d2e3">  inherit          0  </tspan><tspan fill="#c9d2e3" opacity="0.58">UC004</tspan></tspan>
+<tspan x="22" y="274"><tspan fill="#c9d2e3">  dynamic          0  </tspan><tspan fill="#c9d2e3" opacity="0.58">UC005</tspan></tspan>
+<tspan x="22" y="293"><tspan fill="#c9d2e3">  wrong-tier       0  </tspan><tspan fill="#c9d2e3" opacity="0.58">UC006/UC008</tspan></tspan>
+<tspan x="22" y="312"><tspan fill="#c9d2e3">  over-effort      0  </tspan><tspan fill="#c9d2e3" opacity="0.58">UC007</tspan></tspan>
+<tspan x="22" y="331"> </tspan>
+<tspan x="22" y="350"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" font-weight="700">pinned   </tspan><tspan fill="#34d399">█▍</tspan><tspan fill="#c9d2e3" opacity="0.58">░░░░░░░░░░░░░░░░░░░░░░░░░░░░</tspan><tspan fill="#c9d2e3">  4.8%</tspan></tspan>
+<tspan x="22" y="369"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" font-weight="700">unpinned </tspan><tspan fill="#fb7185">████████████████████████████▋</tspan><tspan fill="#c9d2e3" opacity="0.58">░</tspan><tspan fill="#c9d2e3">  95.2%</tspan></tspan>
+</text>
+</g>
+</svg>

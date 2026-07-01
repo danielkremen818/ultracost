@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="468" height="315" viewBox="0 0 468 315" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" role="img" aria-label="ultracost terminal: ultracost ledger — cumulative savings">
+<defs><linearGradient id="frame" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="55%" stop-color="#e879f9"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient><radialGradient id="glow" cx="22%" cy="0%" r="90%"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.16"/><stop offset="60%" stop-color="#a78bfa" stop-opacity="0"/></radialGradient><clipPath id="screen"><rect x="1.5" y="1.5" width="465" height="312" rx="11"/></clipPath></defs>
+<rect x="1" y="1" width="466" height="313" rx="11.5" fill="#0d1017" stroke="url(#frame)" stroke-width="1.5"/>
+<g clip-path="url(#screen)">
+<rect x="0" y="0" width="468" height="315" fill="url(#glow)"/>
+<rect x="1.5" y="1.5" width="465" height="36" rx="11" fill="#161a26"/>
+<rect x="1.5" y="28" width="465" height="10" fill="#161a26"/>
+<line x1="0" y1="37.5" x2="468" y2="37.5" stroke="#000" stroke-opacity="0.35"/>
+<circle cx="24" cy="19" r="5.5" fill="#fb7185"/>
+<circle cx="44" cy="19" r="5.5" fill="#fbbf24"/>
+<circle cx="64" cy="19" r="5.5" fill="#34d399"/>
+<text x="234" y="23" text-anchor="middle" font-size="11" fill="#94a3b8" letter-spacing="0.04em">ultracost ledger — cumulative savings</text>
+<text font-size="13" xml:space="preserve">
+<tspan x="22" y="65"><tspan fill="#34d399">$ </tspan><tspan fill="#22d3ee">ultracost ledger</tspan></tspan>
+<tspan x="22" y="84"> </tspan>
+<tspan x="22" y="103"><tspan fill="#a78bfa"> </tspan><tspan fill="#9f8ff9"> </tspan><tspan fill="#9793f9">u</tspan><tspan fill="#9098f8">l</tspan><tspan fill="#889cf7">t</tspan><tspan fill="#80a0f6">r</tspan><tspan fill="#78a4f6">a</tspan><tspan fill="#70a9f5">c</tspan><tspan fill="#68adf4">o</tspan><tspan fill="#61b1f4">s</tspan><tspan fill="#59b5f3">t</tspan><tspan fill="#51baf2"> </tspan><tspan fill="#49bef2">l</tspan><tspan fill="#41c2f1">e</tspan><tspan fill="#39c6f0">d</tspan><tspan fill="#32cbef">g</tspan><tspan fill="#2acfef">e</tspan><tspan fill="#22d3ee">r</tspan></tspan>
+<tspan x="22" y="122"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">cumulative savings vs an all-opus baseline</tspan></tspan>
+<tspan x="22" y="141"> </tspan>
+<tspan x="22" y="160"><tspan fill="#34d399">╭─ </tspan><tspan fill="#c9d2e3" font-weight="700">savings ledger</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#34d399">──────────────────────────────────╮</tspan></tspan>
+<tspan x="22" y="179"><tspan fill="#34d399">│</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#34d399" font-weight="700">$0.1548</tspan><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">saved across 3 run(s)</tspan><tspan fill="#c9d2e3">                    </tspan><tspan fill="#34d399">│</tspan></tspan>
+<tspan x="22" y="198"><tspan fill="#34d399">│</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">actual $0.4947  ·  all-opus $0.6495  ·  24% saved</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#34d399">│</tspan></tspan>
+<tspan x="22" y="217"><tspan fill="#34d399">│</tspan><tspan fill="#c9d2e3"> </tspan><tspan fill="#c9d2e3" opacity="0.58">today: $0.3264</tspan><tspan fill="#c9d2e3">                                    </tspan><tspan fill="#34d399">│</tspan></tspan>
+<tspan x="22" y="236"><tspan fill="#34d399">╰───────────────────────────────────────────────────╯</tspan></tspan>
+<tspan x="22" y="255"> </tspan>
+<tspan x="22" y="274"><tspan fill="#c9d2e3">  per-run saved  </tspan><tspan fill="#34d399">▁▄█</tspan></tspan>
+<tspan x="22" y="293"><tspan fill="#c9d2e3">  </tspan><tspan fill="#c9d2e3" opacity="0.58">ledger at ~/.claude/ultracost/ledger.jsonl</tspan></tspan>
+</text>
+</g>
+</svg>

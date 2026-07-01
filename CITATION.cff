@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: ultracost
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Daniel
+    family-names: Kremen
+    alias: danielkremen818
+repository-code: "https://github.com/danielkremen818/ultracost"
+url: "https://github.com/danielkremen818/ultracost#readme"
+abstract: >-
+  Per-stage model routing for Claude Code ultracode dynamic workflows. ultracost
+  keeps a single fan-out from silently running every subagent on Opus by injecting
+  an explicit per-stage routing policy each session, statically guarding agent()
+  stages that would inherit the session model, and gating every dynamic-workflow
+  launch with a cost estimate.
+keywords:
+  - claude-code
+  - ultracode
+  - dynamic-workflows
+  - subagents
+  - model-routing
+  - cost-optimization
+license: MIT
+version: 0.3.7
+date-released: "2026-06-15"

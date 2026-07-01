@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "neverUse": ["haiku"],
+  "allowInherit": false,
+  "default": "opus",
+  "tieBreaker": "opus",
+  "tiers": {
+    "opus": { "model": "opus", "effort": "xhigh" },
+    "sonnet": { "model": "sonnet", "effort": "high" }
+  },
+  "alwaysOpus": ["orchestrator", "planner", "final-synthesis", "consolidation"],
+  "rules": [
+    {
+      "tier": "opus",
+      "label": "Coding & reasoning",
+      "when": "anything requiring judgment or a decision: writing/editing/refactoring/deleting code, debugging, fixing errors, designing APIs/schemas/data models/architecture, non-trivial tests, code review, verifying that code is correct / handles edge cases / upholds a contract, security/performance analysis, cross-file reasoning, adversarial review, planning, synthesis, final consolidation"
+    },
+    {
+      "tier": "sonnet",
+      "label": "Pre-planned mechanical & support",
+      "when": "the how is already decided and the stage just applies it: mechanically applying a specified edit across many files, search/grep/glob, file discovery, collecting/listing/extracting, reformatting, mechanical renames, running tests/typecheck/lint and reporting whether they pass, routine git operations, gathering or summarizing context for an opus stage to consume"
+    }
+  ],
+  "effort": {
+    "range": ["low", "medium", "high", "xhigh"],
+    "default": "high",
+    "byComplexity": {
+      "low": "trivial deterministic work with no real judgment: listing or globbing files, simple field extraction, formatting, mechanical renames following a given pattern",
+      "medium": "light judgment on a small surface: a single straightforward edit, summarizing one source, classifying short inputs",
+      "high": "standard coding and analysis: most refactors, per-file review, writing non-trivial tests, multi-step but well-scoped work",
+      "xhigh": "hard reasoning: cross-file architecture and design, adversarial review, planning, and final synthesis/consolidation"
+    },
+    "maxByModel": { "sonnet": "high", "opus": "xhigh" }
+  },
+  "classify": {
+    "_note": "Extra keyword signals (merged with the built-in rubric) for the UC006 wrong-tier check and `ultracost explain`. The opening imperative verb of a prompt is weighted most.",
+    "keywords": {
+      "opus": ["architecture", "threat-model", "migrate", "redesign", "tradeoff"],
+      "sonnet": ["lint", "stub", "boilerplate", "transcribe", "tally"]
+    }
+  },
+  "budget": {
+    "_note": "Pre-flight caps enforced by the cost gate. null = no cap. perRun is per workflow launch; perDay sums the savings-ledger spend for the current day.",
+    "perRun": null,
+    "perDay": null
+  },
+  "pricing": {
+    "_unit": "USD per million tokens",
+    "_source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+    "_asOf": "2026-06-13",
+    "_models": { "opus": "Claude Opus 4.8", "sonnet": "Claude Sonnet 4.6", "haiku": "Claude Haiku 4.5" },
+    "opus": { "input": 5, "output": 25 },
+    "sonnet": { "input": 3, "output": 15 },
+    "haiku": { "input": 1, "output": 5 }
+  },
+  "estimation": {
+    "tokensPerStage": { "input": 2000, "output": 1200 },
+    "effortOutputMultiplier": { "low": 0.4, "medium": 1, "high": 1.8, "xhigh": 3, "max": 4 },
+    "assumedFanout": 5,
+    "cacheMultipliers": { "cacheRead": 0.1, "cacheWrite": 1.25 }
+  }
+}
